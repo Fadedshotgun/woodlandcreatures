@@ -48,6 +48,6 @@ window.onclick = e => {
     handle(e)
 } 
 
-screen.ontouchstart = e => {
+window.ontouchstart = e => {
     handle(e)
 }
