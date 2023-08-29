@@ -26,7 +26,7 @@ var creatureToPosition = {
 
 var currentCreature = "frog"
 
-window.onclick = e => {
+function handle(e) {
     var img = "resources/images/" + e.target.id + ".png"
     var valid = validID[e.target.id]
 
@@ -42,4 +42,12 @@ window.onclick = e => {
         console.log("translate("+pos[1]+","+pos[2]+")");
         document.getElementById("hat_image").style.transform = "translate("+pos[1]+","+pos[2]+")";
     }
+}
+
+window.onclick = e => {
+    handle(e)
 } 
+
+window.ontouchstart = e => {
+    handle(e)
+}
