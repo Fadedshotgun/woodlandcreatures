@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.creature {
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-image: url("../resources/images/forest.png");
+    background-size: cover;
+    background-position: 10%;
+}
+
+.hat_selection {
+    background-color: lightblue;
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: absolute;
+    margin-left: 50%;
+}
+
+.hat_option {
+    height: 50%;
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: blue;
+}
+
+.hat_toggle {
+    position: absolute;
+    bottom: 30%;
+    height: 5%;
+    width: 15%;
+    background: none;
+    border: 0;
+    margin-left: 50%;
+    background-color: lightblue;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.creature_selection {
+    position: absolute;
+    background-color: lightcoral;
+    height: 30%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.creature_option {
+    height: 50%;
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: red;
+}
+
+.creature_toggle {
+    position: absolute;
+    bottom: 30%;
+    height: 5%;
+    width: 15%;
+    background: none;
+    border: 0;
+    background-color: lightcoral;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#creature_image {
+    position: absolute;
+    height: 40%;
+    object-fit: contain;
+    aspect-ratio: 1;
+    background: none;
+}
+
+#hat_image {
+    position: absolute;
+    height: 20%;
+    object-fit: contain;
+    aspect-ratio: 1;
+    background:none;
+    border: none;
+}
+
+#frog {
+    background-image: url("../resources/images/frog.png");
+}
+
+#fox {
+    background-image: url("../resources/images/fox.png");
+}
+
+#raccoon {
+    background-image: url("../resources/images/raccoon.png");
+}
+
+#bowler {
+    background-image: url("../resources/images/bowler.png");
+}
+
+#wizard {
+    background-image: url("../resources/images/wizard.png");
+}
+
+#beanie {
+    background-image: url("../resources/images/beanie.png");
+}
+
+#tophat {
+    background-image: url("../resources/images/tophat.png");
+}
+
+.parent {
+    height: 30%;
+    width: 50%;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    flex-direction: column;
+}
+
+.child {
+    height: 50px;
+    width: 50px;
+    background-image: url(../resources/images/catstare.png);
+    border: 5px solid black;
+    border-radius: 10px;
+}
