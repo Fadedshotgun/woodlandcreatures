@@ -2,11 +2,14 @@ var validID = {
     "frog": 1,
     "fox":1,
     "raccoon":1,
+    "deer":1,
 
     "bowler": 2,
     "wizard":2,
     "beanie":2,
-    "tophat":2
+    "tophat":2,
+    "cowboy":2,
+    "large":2
 };
 
 var creatureToPosition = {
@@ -21,6 +24,10 @@ var creatureToPosition = {
     "raccoon": {
         1:"30%",
         2:"-90%"
+    },
+    "deer": {
+        1:"45%",
+        2:"-75%"
     }
 };
 
