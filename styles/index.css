@@ -107,6 +107,10 @@
     border: none;
 }
 
+#deer {
+    background-image: url("../resources/images/deer.png");
+}
+
 #frog {
     background-image: url("../resources/images/frog.png");
 }
@@ -123,6 +127,14 @@
     background-image: url("../resources/images/bowler.png");
 }
 
+#cowboy {
+    background-image: url("../resources/images/cowboy.png");
+}
+
+#large {
+    background-image: url("../resources/images/large.png");
+}
+
 #wizard {
     background-image: url("../resources/images/wizard.png");
 }
@@ -133,4 +145,22 @@
 
 #tophat {
     background-image: url("../resources/images/tophat.png");
+}
+
+.parent {
+    height: 30%;
+    width: 50%;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    flex-direction: column;
+}
+
+.child {
+    height: 50px;
+    width: 50px;
+    background-image: url(../resources/images/catstare.png);
+    border: 5px solid black;
+    border-radius: 10px;
 }
