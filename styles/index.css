@@ -6,14 +6,16 @@
 }
 
 .creature {
-    height: 70%;
+    height: 100%;
     width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-
+  position: absolute;
+  background-color: grey;
+  
     background-image: url("../resources/images/forest.png");
     background-size: cover;
     background-position: 10%;
@@ -24,12 +26,16 @@
     height: 30%;
     width: 50%;
     display: flex;
+    overflow-x: scroll;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-evenly;
     position: absolute;
     margin-left: 50%;
+    top:70%;
+    overflow-y: visible;
+    transition: margin-top 0.3s ease-out;
 }
 
 .hat_option {
@@ -40,11 +46,17 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: blue;
+    transition: background-color .2s;
+    border-radius: 10%;
+}
+
+.hat_option:hover {
+  background-color: #0000b4;
 }
 
 .hat_toggle {
-    position: absolute;
-    bottom: 30%;
+    position:absolute;
+    bottom: 30vh;
     height: 5%;
     width: 15%;
     background: none;
@@ -52,8 +64,18 @@
     margin-left: 50%;
     background-color: lightblue;
     font-weight: bolder;
-    font-size: clamp(0rem,6vw,1rem);
+    font-size: clamp(0rem,6vw,1.3rem);
+    transition: bottom 0.3s ease-out;
 }
+
+.hat_toggle:hover {
+    background-color: rgb(192, 239, 255);
+}
+
+.hat_toggle:active {
+    background-color: rgb(147, 184, 196);
+}
+
 
 .creature_selection {
     position: absolute;
@@ -61,11 +83,16 @@
     height: 30%;
     width: 50%;
 
+    top:70%;
+    overflow-y: visible;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-evenly;
+
+    transition: margin-top 0.3s ease-out;
 }
 
 .creature_option {
@@ -76,19 +103,37 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: red;
+    transition: background-color .2s;
+    border-radius: 10%;
 }
 
+.creature_option:hover {
+  background-color: #b40000;
+}
 .creature_toggle {
-    position: absolute;
-    bottom: 30%;
+    position:absolute;
+    bottom: 30vh;
     height: 5%;
     width: 15%;
     background: none;
     border: 0;
+    margin-left: 0%;
     background-color: lightcoral;
     font-weight: bolder;
-    font-size: clamp(0rem,3vw,1.3rem);
+    font-size: clamp(0rem,2.5vw,1.3rem);
+    transition: bottom 0.3s ease-out;
 }
+
+.creature_toggle:hover {
+    background-color: rgb(255, 150, 150);
+}
+
+.creature_toggle:active {
+    background-color: rgb(180, 100, 100);
+}
+
+
+/* IMAGE HANDLING */
 
 #creature_image {
     position: absolute;
@@ -107,6 +152,8 @@
     border: none;
 }
 
+/* ANIMALS */
+
 #deer {
     background-image: url("../resources/images/deer.png");
 }
@@ -122,6 +169,8 @@
 #raccoon {
     background-image: url("../resources/images/raccoon.png");
 }
+
+/* HATS */
 
 #bowler {
     background-image: url("../resources/images/bowler.png");
@@ -145,22 +194,4 @@
 
 #tophat {
     background-image: url("../resources/images/tophat.png");
-}
-
-.parent {
-    height: 30%;
-    width: 50%;
-    border: 5px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    align-content:flex-start;
-    flex-direction: column;
-}
-
-.child {
-    height: 50px;
-    width: 50px;
-    background-image: url(../resources/images/catstare.png);
-    border: 5px solid black;
-    border-radius: 10px;
 }
